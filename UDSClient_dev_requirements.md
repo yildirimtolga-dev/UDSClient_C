@@ -20,7 +20,7 @@ The scope of this document encompasses the detailed requirements and specificati
 | 10 | If the UDS response has data, the data should be written to the buffer that is the input of the function. |
 | 11 | CAN configuration should be set by the developer who uses the library. The "send CAN message" function and the "receive CAN message" callback function should be set by the developer. The library must not directly control any hardware or driver. |
 | 12 | The logging system should be separate with log level, such as: NONE, TRACE, DEBUG, INFO, WARNING, ERROR, FATAL. |
-| 13 | The logging system should be configurable in one header file. The logging level should be selectable for each C file. |
+| 13 | The logging level should be selectable for each C file with functions. |
 | 14 | This library can use the system logger, so the UDS client logger function should call the system logger with a log description. Also, log levels should be configurable with functions. |
 
 ## 3. External Interface Requirements
