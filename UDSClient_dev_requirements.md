@@ -13,7 +13,7 @@ The scope of this document encompasses the detailed requirements and specificati
 | 3 | Baud rate should be selectable with options: 125 kbps, 250 kbps, 500 kbps, 1 Mbps. |
 | 4 | There should be an additional delay between consecutive frames. The delay time should be set by the developer who uses the library. |
 | 5 | There should be sync and async functions for all UDS services. |
-| 6 | The timer callback function should be set by the developer. The timer's period should be 1 ms. UDSClient_SoftTimer shall create new timers with an ID and callback functions. |
+| 6 | The timer callback function should be set by the developer. The timer's period should be 1 ms. UDSClient_SoftTimer shall create new timers with an ID and callback functions. The softtimer functionos should be available on User side. If the user want to use the timer for another purpose, she/he can do it. |
 | 7 | All UDS negative response codes should be added. Each UDS function should return a success or negative response code or CAN error." |
 | 8 | If the UDS functions encounter a CAN error, they should be retried. The maximum retry counter should be configurable. |
 | 9 | All configurable options that related to UDS should be stored in a structure. |
