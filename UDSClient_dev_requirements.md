@@ -24,6 +24,10 @@ The scope of this document encompasses the detailed requirements and specificati
 | 14 | This library can use the system logger, so the UDS client logger function should call the system logger with a log description. Also, log levels should be configurable with functions. |
 
 ## 3. External Interface Requirements
+| ID | Description |
+| - | - |
+| 1 | The library should be developed independed from hardware. All hardware level functions should be developed by user. |
+| 2 | The library should be developed independed from operation system. |
 
 ## 4. Non-functional Requirements
 | ID | Description |
